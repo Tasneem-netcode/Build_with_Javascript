@@ -1,0 +1,11 @@
+# Git is trying to access these system folders, which causes permission errors.
+# We'll ignore them to clean up the `git status` output.
+**/AppData/
+**/Local Settings/
+**/My Documents/
+**/NetHood/
+**/PrintHood/
+**/Recent/
+**/SendTo/
+**/Start Menu/
+**/Templates/
