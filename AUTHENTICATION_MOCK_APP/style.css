@@ -6,6 +6,9 @@
     --button-gradient: linear-gradient(90deg, #d4af37, #e0c268);
     --button-text-color: #333;
     --dark-bg-color: #121212;
+    --light-bg-color: #f0f0f0;
+    --dark-text-color: #f0f0f0;
+    --light-text-color: #333;
 }
 
 *{
@@ -264,3 +267,98 @@ form {
         transform: translateY(-20px) rotate(180deg);
     }
 }
+
+/* Dashboard */
+.dashboard-container button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.dashboard-container button:hover {
+  background: #4f46e5;
+}
+
+/* ========================= */
+/* THEME STYLES */
+/* ========================= */
+
+/* Dark Theme (default) */
+body.dark {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-text-color);
+}
+
+body.dark .login-card {
+  background: var(--card-bg-color);
+  color: var(--dark-text-color);
+}
+
+/* Light Theme */
+body.light {
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+}
+
+body.light .login-card {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--light-text-color);
+}
+
+body.light input {
+  color: var(--light-text-color);
+}
+
+body.light input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* ========================= */
+/* Theme Toggle Button Style */
+/* ========================= */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 50; /* ensure it stays above other elements */
+}
+
+.theme-toggle button {
+  background: var(--card-bg-color);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle button span {
+  font-size: 1.2rem;
+}
+
+.theme-toggle button:hover {
+  background: linear-gradient(135deg, #D4AF37, #B8860B);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.3);
+}
+
+.theme-toggle button:active {
+  transform: translateY(0);
+}
+
