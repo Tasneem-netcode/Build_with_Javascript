@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Demo</title>
+  <link rel="stylesheet" href="shopping.css">
+</head>
+<body>
+  <h1 id="welcome"></h1>
+
+  <div class="products">
+    <div class="product">
+      <h3>Product A</h3>
+      <button class="CartBtn" data-item ="Product A">Add to Cart</button>
+      <button class="wishBtn" data-item ="Product A">Add to Wishlist</button>
+    </div>
+    <div class="product">
+      <h3>Product B</h3>
+      <button class="CartBtn" data-item ="Product B">Add to Cart</button>
+      <button class="wishBtn" data-item ="Product B">Add to Wishlist</button>
+    </div>
+  </div>
+
+  <h2>🛒 Cart (sessionStorage)</h2>
+  <ul id="cart"></ul>
+  <p>Items in cart: <span id="cartCount">0</span></p>
+
+  <h2>❤️ Wishlist (localStorage)</h2>
+  <ul id="wishlist"></ul>
+  <p>Items in wishlist: <span id="wishCount">0</span></p>
+
+  <script src="shopping.js"></script>
+</body>
+</html>
