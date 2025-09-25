@@ -193,3 +193,14 @@ body{
     background-color: #c79cf3;
     transform: scale(1.05);
 }
+
+/* Placeholder styling for contenteditable */
+.task-text {
+  outline: none; /* Removes the blue border */
+  cursor: text;  /* Keeps text cursor */
+  color: #333;
+}
+
+.task-text.empty {
+  color: #aaa; /* Light gray for placeholder effect */
+}
