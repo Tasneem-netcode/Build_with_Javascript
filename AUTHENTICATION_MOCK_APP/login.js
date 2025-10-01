@@ -63,3 +63,5 @@ function applyTheme(){
 
 // Call the function to apply the theme on initial load
 applyTheme();
+
+
